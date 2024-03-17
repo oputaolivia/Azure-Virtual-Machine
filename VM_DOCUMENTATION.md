@@ -93,25 +93,57 @@ Install a web server software on your VM. Common choices include Apache, Nginx, 
 ### Transfer Webpage files
 Tools like SCP, WinSCP, Git or FTP can be used to upload files. Since my webpage is already on GitHub, I would clone the repository to the `/var/www` directory.
 1. Move into the `www` directory from thr oot directory.
-```cd /var/www```
-2. Clone the repository.
-``` sudo git clone <git url>```
-3. Move into the Azure-Virtual-Machine directory.
-``` cd Azure-virtual-Machine``
-4. Set Permissions.
-``` sudo chmod -R 755 /var/www/```
+```
+{
+cd /var/www
+}
+```
+3. Clone the repository.
+```
+{
+sudo git clone https://github.com/oputaolivia/Azure-Virtual-Machine.git
+}
+```
+5. Move into the Azure-Virtual-Machine directory.
+```
+{
+cd Azure-virtual-Machine
+}
+```
+7. Set Permissions.
+```
+{
+sudo chmod -R 755 /var/www/
+}
+```
 
 
 ### Deploying a Webpage
 To actually have our webpage served, we need to ensure that Apache is configured to serve the specific webpage.
 1. Change directory to the root directory and navigate to the `sites_available` folder to see the `000-default.conf` file.
-``` ../../etc/apache2/sites-available```
-2. Using Vim open the `000-default.conf file
-```sudo vim 000-default.conf```
-3. Edit the config file by changing the DocumentRoot from `/var/www/html` to `/var/www/Azure-Virtual-Machine` then save and quit.
-4. Before accessing the website, it's a good idea to test the Apache configuration to ensure there are no syntax errors.
-``` sudo apache2ctl configtest```
-5. If there are no errors, restart the Apache service to apply the changes.
-```sudo systemctl restart apache2```
+```
+{
+cd ../../etc/apache2/sites-available
+}
+```
+3. Using Vim open the `000-default.conf file
+```
+{
+sudo vim 000-default.conf
+}
+```
+5. Edit the config file by changing the DocumentRoot from `/var/www/html` to `/var/www/Azure-Virtual-Machine` then save and quit.
+6. Before accessing the website, it's a good idea to test the Apache configuration to ensure there are no syntax errors.
+```
+{
+sudo apache2ctl configtest
+}
+```
+8. If there are no errors, restart the Apache service to apply the changes.
+```
+{
+sudo systemctl restart apache2
+}
+```
 
 > Now the webpage is accessible via my public address http://4.222.184.194
