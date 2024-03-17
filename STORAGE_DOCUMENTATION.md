@@ -135,23 +135,23 @@ Create and configure Azure File shares. Storage Browser would be used to manage 
 1. In the portal, search for and select __Virtual networks__ and click on  __+ Create__.
    ![37](https://github.com/oputaolivia/Azure-Virtual-Machine/assets/72948572/5beebb99-a0ae-48e0-b580-2c3bd5e61c68)
 
-3. On the __Basics__ tab. In the project details section assign a resource group and subscription. In the instance details section, give the virtual network a name in my case `vnet1` and I chose `South Africa North` as my region.
+2. On the __Basics__ tab. In the project details section assign a resource group and subscription. In the instance details section, give the virtual network a name in my case `vnet1` and I chose `South Africa North` as my region.
    ![38](https://github.com/oputaolivia/Azure-Virtual-Machine/assets/72948572/1285c892-bb4b-4528-a306-bd1a4c654a51)
 
-5. Taking the defaults for other parameters, select __Review + create__, and then __Create__.
+3. Taking the defaults for other parameters, select __Review + create__, and then __Create__.
    ![39](https://github.com/oputaolivia/Azure-Virtual-Machine/assets/72948572/32088dcf-8f90-4bfd-b1af-1e3d27159675)
 
-7. Once the virtual network has been created, select __Go to resource__.
+4. Once the virtual network has been created, select __Go to resource__.
    ![Uploading 40.png…]()
 
-9. In the __Settings__ section, select the __Subnets blade__, select the default subnet. In the Service endpoints section I chose Microsoft.Storage in the Services drop-down and saved.
-10. On the __Security + Networking__ section, select the __Networking__ blade and click on __+ Add existing Virtual Network__. select the subscription, the just created virtual network and leave the subnets as default and click __Enable__.
+4. In the __Settings__ section, select the __Subnets blade__, select the default subnet. In the Service endpoints section I chose Microsoft.Storage in the Services drop-down and saved.
+6. On the __Security + Networking__ section, select the __Networking__ blade and click on __+ Add existing Virtual Network__. select the subscription, the just created virtual network and leave the subnets as default and click __Enable__.
     ![41](https://github.com/oputaolivia/Azure-Virtual-Machine/assets/72948572/c0ed19fd-70e9-48f1-aa74-db52f48ca9ce)
 
-12. After it has been enabled click on __Add__.
+7. After it has been enabled click on __Add__.
     ![42](https://github.com/oputaolivia/Azure-Virtual-Machine/assets/72948572/b062bb9d-ce81-46ec-88d6-d40fdd97ffae)
 
-14. In the __Firewall__ section, Delete the machine IP address.
+8. In the __Firewall__ section, Delete the machine IP address.
     ![43](https://github.com/oputaolivia/Azure-Virtual-Machine/assets/72948572/d38ece0f-5309-4c3a-8d06-77e219d746f3)
 
 > Allowed traffic should only come from the virtual network.
