@@ -1,5 +1,6 @@
 # Deploying a zone-resilient Azure Virtual Machine Scale Sets
 ---
+A Virtual Machine Scale Set (VMSS) is a powerful feature in Microsoft Azure that allows you to create and manage a group of identical virtual machines (VMs). These VMs are automatically load-balanced and can scale up or down based on demand or a predefined schedule.
 
 # Table of Contents
 1. [Create a Virtual Machine Scale Set (VMSS)](#create-a-virtual-machine-scale-set-vmss)
