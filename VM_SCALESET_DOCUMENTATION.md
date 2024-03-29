@@ -3,9 +3,9 @@
 
 # Table of Contents
 1. [Create a Virtual Machine Scale Set (VMSS)](#create-a-virtual-machine-scale-set-vmss)
-2. [Configure Networkiing](#prerequisite)
-3. [Configure Load Balancing](#step-by-step-guide)
-4. [Access the Virtual Machine Instance]()
+2. [Configure Virtual Network](#configure-virtual-network)
+3. [Configure Load Balancing](#configure-load-balancing)
+4. [Access the Virtual Machine Instance](#access-the-vmss-instance)
 
 ## Create a Virtual Machine Scale Set (VMSS)
 1. Login to the [Azure Portal](https://portal.azure.com/).
