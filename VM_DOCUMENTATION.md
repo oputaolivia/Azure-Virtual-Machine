@@ -83,7 +83,7 @@ Click on __Create Resource__ then select __Virtual Machine__ from the list of re
 ``` 
 ssh username@public_ip_address
 ```
-    ![22](https://github.com/oputaolivia/Azure-Virtual-Machine/assets/72948572/a14d73d8-353b-488b-904b-4a122bec4710)
+![22](https://github.com/oputaolivia/Azure-Virtual-Machine/assets/72948572/a14d73d8-353b-488b-904b-4a122bec4710)
 
 7. Key in the VM password.
     ![23](https://github.com/oputaolivia/Azure-Virtual-Machine/assets/72948572/01f6fcea-87b8-49e9-9788-d6ac6d6b60ef)
